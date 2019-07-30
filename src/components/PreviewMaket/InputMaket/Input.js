@@ -38,7 +38,7 @@ componentDidMount(){
         
        if(tag.length > 0 && document.getElementById($(this)[0].className +"_tag") == undefined ){
        // && document.getElementById($(this)[0].className +"_tag") === undefined
-                       
+       debugger;         
        $("<span class='tag' id='"+$(this)[0].className +"_tag' count='"+count +"' style='display:none'><span class='close'>&times;</span><span class='textClose'>"+tag+"</span></span>").insertBefore(this).fadeIn(100);
        $(this).val("");
        count++;

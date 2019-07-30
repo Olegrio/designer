@@ -2,6 +2,7 @@ let state  = {
     _site_value: 'WWW.SLETAT.RU',
     _phone_value: '8 800 333-99-63 ',
     _adress_value:'г. Санкт-Петербург, пл. Карла Фаберже, д. 8 литер б.',
+    _period_value: '10:00',
     render_value(el){
         let value;
         
@@ -19,6 +20,11 @@ let state  = {
             case 'ADRESS':
             value = this._adress_value;
             break;
+
+            case "PERIOD":
+            value = this._period_value;
+            break;
+            
 
             default:
             value='';
@@ -38,6 +44,9 @@ let state  = {
 
         case "ADRESS":
             this._adress_value =  text;
+        break;
+        case "PERIOD":
+            this._period_value =  text;
         break;
 
         default:

@@ -12,6 +12,8 @@ body{
   background-color:#424242a1;
   margin: auto;
   margin-top: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .App {
   text-align: center;
