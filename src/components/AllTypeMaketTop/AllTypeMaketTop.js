@@ -2,9 +2,7 @@ import React from 'react';
 import {Route} from 'react-router-dom';
 
 import st from './AllTypeMaketTop.module.css';
-import ContainerOneTypeMaket from '../OneTypeMaket/ContainerOneTypeMaket';
 import ContainerPreviewMaket from '../PreviewMaket/ContainerPreviewMaket';
-
 import Slide from '../Slide/Slide';
 
 
@@ -16,8 +14,6 @@ render(){
 
 let data = this.props.data; 
 let state = this.props.state;
-//let arrContainerOneTypeMaket = data.map( (data,i) =><div key={'arrContainerOneTypeMaket-'+i} className={st.element}> <ContainerOneTypeMaket data={data} /></div>);
-
 
 let arrPreviewMaket = data.map( (data,i) => <Route   
 key={'arrPreviewMaket-'+i}  path={'/preview/'+data.type } data={data} render={ () => <ContainerPreviewMaket key={'ContainerPreviewMaket-'+i} state={state} data={data.maket} type={data.type} type_name={data.type_name} />} /> ) ;
@@ -26,21 +22,15 @@ key={'arrPreviewMaket-'+i}  path={'/preview/'+data.type } data={data} render={ (
     return(
 
       <div className={st.top}>
-      
           <div className={st.arrContainerOneTypeMaket}>
-          {/* {arrContainerOneTypeMaket} */}
-          <Slide data={data} />
+            <Slide data={data} />
           </div>
-
           <div className={st.arrPreviewMaket}>
-          {arrPreviewMaket}
-          
+            {arrPreviewMaket}
           </div>
-     
       </div>
     );
-}
-
+  }
 }
 
 

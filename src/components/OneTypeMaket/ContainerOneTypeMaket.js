@@ -16,7 +16,7 @@ let data = this.props.data;
 
   
 return(
-<OneTypeMaket  data={data} />
+    <OneTypeMaket  data={data} />
 
 )}}
 

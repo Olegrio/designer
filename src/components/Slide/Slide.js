@@ -14,9 +14,11 @@ const Wrapper = styled.div`
 `;
 
 const Page = styled.div`
-       
+
 width: 100px;
 transform: matrix(0.4, 0, 0, 0.4, 0, 0);
+
+focus::outline: -webkit-focus-ring-color auto 0px;
 `;
 
 class SlideView extends React.Component {

@@ -43,6 +43,7 @@ let state  = {
         default:
         console.log('нет value для данного id')
     };},
+
     fill_maket(){
         
         let arrText = Array.from(document.getElementsByTagName('text'));
@@ -60,7 +61,9 @@ let state  = {
     createValue (e){
 
     document.getElementById("tag-typer").disabled = false;
+           
             let addInputCrValue = (el) =>{
+
                 document.getElementById('tag-typer').setAttribute('el', el);
                 document.getElementById('tag-typer').setAttribute('class', el);
                 document.getElementById('tag-typer').focus();
@@ -71,8 +74,9 @@ let state  = {
                 document.getElementById('tag-typer').oninput = function(e){
                     console.log(e.target.value + ' ' +e.target.classList[0]); 
                   
-                    //state.add_value(e.target.value,e.target.classList[0]);
-                    this.fill_maket();
+                    state.add_value(e.target.value,e.target.classList[0]);
+                    
+                    state.fill_maket();
                 };
                 }
         

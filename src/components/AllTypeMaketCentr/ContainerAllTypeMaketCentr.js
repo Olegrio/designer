@@ -2,14 +2,14 @@ import React from 'react';
 
 import AllTypeMaketCentr from './AllTypeMaketCentr';
 
- import data from '../../DATA/DATA';
+import data from '../../DATA/DATA';
 
 class ContainerAllTypeMaketCentr extends React.Component {
 
     render(){
-return(
-  <AllTypeMaketCentr data={data}/>
-);
+        return(
+          <AllTypeMaketCentr data={data}/>
+        );
 
     }
 }

@@ -12,19 +12,14 @@
 }
 .arrImg{
     margin-top: 50px;
-display: grid;
-grid-template-areas: 
-'l1 r l2';
-grid-auto-columns: 2fr 10fr 2fr;
-
+    display: grid;
+    grid-template-areas: 
+    'l1 r l2';
+    grid-auto-columns: 2fr 10fr 2fr;
 }
 
 .arrImg_Route{
     grid-area: r;
-    
-    
-    
-
 }
 
 .arrImg_Img{
@@ -43,10 +38,5 @@ grid-auto-columns: 2fr 10fr 2fr;
 
 .PreviewMaket_div{
     border: none;
-   
-
 }
 
-.PreviewMaket{
-   
-}

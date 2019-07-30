@@ -12,14 +12,12 @@ let name = this.props.name;
 let src = this.props.src;
 let state = this.props.state;
 
-return(
+return( 
 
-<Maket name={name} state={state} src={src} />
+    <Maket name={name} state={state} src={src} />
 
-)
-
-}
-
+    )
+  }
 }
 
 
